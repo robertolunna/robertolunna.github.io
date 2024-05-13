@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación CRUD Sencilla</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Aplicación CRUD Sencilla</h1>
+        <form id="addForm">
+            <input type="text" id="nameInput" placeholder="Ingrese un nombre" required>
+            <button type="submit">Agregar</button>
+        </form>
+        <input type="text" id="searchInput" placeholder="Buscar por nombre" oninput="searchRecord(this.value)">
+        <ul id="itemsList"></ul>
+        <div id="recordDetails" style="margin-top: 20px;"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
